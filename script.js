@@ -19,12 +19,12 @@ if (menuButton && nav) {
 const pageMeta = {
   en: {
     title: 'Rodríguez Automation Solutions | Business Process Automation',
-    description: 'Practical automation solutions for small businesses. Automate repetitive work, save time, reduce errors, and improve operations with Python, Power Automate, Excel/VBA, Power Apps, APIs, and RPA.',
+    description: 'Practical automation solutions for small and medium-sized businesses. Automate repetitive work, save time, reduce errors, and improve operations with Python, Power Automate, Excel/VBA, Power Apps, APIs, and RPA.',
     ogDescription: 'Automate repetitive work. Save time. Reduce errors.'
   },
   es: {
     title: 'Rodríguez Automation Solutions | Automatización de Procesos',
-    description: 'Soluciones prácticas de automatización para pequeños negocios. Automatiza trabajo repetitivo, ahorra tiempo, reduce errores y mejora operaciones con Python, Power Automate, Excel/VBA, Power Apps, APIs y RPA.',
+    description: 'Soluciones prácticas de automatización para pequeñas y medianas empresas. Automatiza trabajo repetitivo, ahorra tiempo, reduce errores y mejora operaciones con Python, Power Automate, Excel/VBA, Power Apps, APIs y RPA.',
     ogDescription: 'Automatiza el trabajo repetitivo. Ahorra tiempo. Reduce errores.'
   }
 };
