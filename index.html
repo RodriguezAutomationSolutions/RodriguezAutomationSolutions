@@ -4,17 +4,19 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rodríguez Automation Solutions | Business Process Automation</title>
-  <meta name="description" content="Practical automation solutions for small businesses. Automate repetitive work, save time, reduce errors, and improve operations with Python, Power Automate, Excel/VBA, Power Apps, APIs, and RPA.">
+  <meta id="meta-description" name="description" content="Practical automation solutions for small businesses. Automate repetitive work, save time, reduce errors, and improve operations with Python, Power Automate, Excel/VBA, Power Apps, APIs, and RPA.">
   <meta name="theme-color" content="#0b1324">
   <meta property="og:title" content="Rodríguez Automation Solutions">
-  <meta property="og:description" content="Automate repetitive work. Save time. Reduce errors.">
+  <meta id="og-description" property="og:description" content="Automate repetitive work. Save time. Reduce errors.">
   <meta property="og:type" content="website">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
+  <a class="skip-link" href="#main"
+     data-en="Skip to content"
+     data-es="Ir al contenido">Skip to content</a>
 
   <header class="site-header">
     <div class="container nav-wrap">
@@ -26,17 +28,30 @@
         </span>
       </a>
 
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav">
-        <span class="sr-only">Open navigation</span>
-        <span></span><span></span><span></span>
-      </button>
+      <div class="nav-actions">
+        <div class="language-switcher" role="group" aria-label="Language selector">
+          <button class="lang-button active" type="button" data-lang="en" aria-pressed="true">EN</button>
+          <span aria-hidden="true">/</span>
+          <button class="lang-button" type="button" data-lang="es" aria-pressed="false">ES</button>
+        </div>
+
+        <button class="menu-button" type="button" aria-expanded="false" aria-controls="main-nav"
+                data-en-aria="Open navigation" data-es-aria="Abrir navegación">
+          <span class="sr-only"
+                data-en="Open navigation"
+                data-es="Abrir navegación">Open navigation</span>
+          <span></span><span></span><span></span>
+        </button>
+      </div>
 
       <nav id="main-nav" class="main-nav" aria-label="Main navigation">
-        <a href="#services">Services</a>
-        <a href="#examples">Examples</a>
-        <a href="#process">How it works</a>
-        <a href="#about">About</a>
-        <a class="nav-cta" href="#contact">Free assessment</a>
+        <a href="#services" data-en="Services" data-es="Servicios">Services</a>
+        <a href="#examples" data-en="Examples" data-es="Ejemplos">Examples</a>
+        <a href="#process" data-en="How it works" data-es="Cómo funciona">How it works</a>
+        <a href="#about" data-en="About" data-es="Experiencia">About</a>
+        <a class="nav-cta" href="#contact"
+           data-en="Free assessment"
+           data-es="Evaluación gratis">Free assessment</a>
       </nav>
     </div>
   </header>
@@ -45,41 +60,73 @@
     <section id="top" class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <div class="eyebrow">Automation consulting for small businesses</div>
-          <h1>Automate repetitive work.<br><span>Save time. Reduce errors.</span></h1>
-          <p class="hero-lead">
+          <div class="eyebrow"
+               data-en="Automation consulting for small businesses"
+               data-es="Consultoría en automatización para pequeños negocios">
+            Automation consulting for small businesses
+          </div>
+
+          <h1 data-en-html="Automate repetitive work.<br><span>Save time. Reduce errors.</span>"
+              data-es-html="Automatiza el trabajo repetitivo.<br><span>Ahorra tiempo. Reduce errores.</span>">
+            Automate repetitive work.<br><span>Save time. Reduce errors.</span>
+          </h1>
+
+          <p class="hero-lead"
+             data-en="I help small businesses simplify repetitive processes with practical automation—from Excel and Microsoft 365 workflows to Python, APIs, Power Apps, and RPA."
+             data-es="Ayudo a pequeños negocios a simplificar procesos repetitivos mediante automatizaciones prácticas: desde Excel y flujos de Microsoft 365 hasta Python, APIs, Power Apps y RPA.">
             I help small businesses simplify repetitive processes with practical automation—
             from Excel and Microsoft 365 workflows to Python, APIs, Power Apps, and RPA.
           </p>
 
           <div class="hero-actions">
-            <a class="button button-primary" href="mailto:LuisJRodriguezE@gmail.com?subject=Free%20Automation%20Assessment&body=Hi%20Luis%2C%0A%0AI%27d%20like%20to%20discuss%20a%20process%20we%20may%20be%20able%20to%20automate.%0A%0ACompany%3A%0AProcess%20or%20task%3A%0AApproximate%20time%20spent%20today%3A%0A%0AThanks%21">
+            <a class="button button-primary bilingual-contact"
+               href="mailto:LuisJRodriguezE@gmail.com?subject=Free%20Automation%20Assessment&body=Hi%20Luis%2C%0A%0AI%27d%20like%20to%20discuss%20a%20process%20we%20may%20be%20able%20to%20automate.%0A%0ACompany%3A%0AProcess%20or%20task%3A%0AApproximate%20time%20spent%20today%3A%0A%0AThanks%21"
+               data-en="Request a free assessment"
+               data-es="Solicita una evaluación gratis"
+               data-en-href="mailto:LuisJRodriguezE@gmail.com?subject=Free%20Automation%20Assessment&body=Hi%20Luis%2C%0A%0AI%27d%20like%20to%20discuss%20a%20process%20we%20may%20be%20able%20to%20automate.%0A%0ACompany%3A%0AProcess%20or%20task%3A%0AApproximate%20time%20spent%20today%3A%0A%0AThanks%21"
+               data-es-href="mailto:LuisJRodriguezE@gmail.com?subject=Evaluaci%C3%B3n%20de%20Automatizaci%C3%B3n&body=Hola%20Luis%2C%0A%0AMe%20gustar%C3%ADa%20conversar%20sobre%20un%20proceso%20de%20mi%20negocio%20que%20podr%C3%ADamos%20automatizar.%0A%0AEmpresa%3A%0AProceso%20o%20tarea%3A%0ATiempo%20aproximado%20que%20toma%20actualmente%3A%0A%0AGracias%21">
               Request a free assessment
             </a>
-            <a class="button button-secondary" href="https://wa.me/17873714068?text=Hi%20Luis%2C%20I%27m%20interested%20in%20an%20automation%20assessment%20for%20my%20business.">
+
+            <a class="button button-secondary bilingual-contact"
+               href="https://wa.me/17873714068?text=Hi%20Luis%2C%20I%27m%20interested%20in%20an%20automation%20assessment%20for%20my%20business."
+               data-en="WhatsApp"
+               data-es="WhatsApp"
+               data-en-href="https://wa.me/17873714068?text=Hi%20Luis%2C%20I%27m%20interested%20in%20an%20automation%20assessment%20for%20my%20business."
+               data-es-href="https://wa.me/17873714068?text=Hola%20Luis%2C%20me%20interesa%20una%20evaluaci%C3%B3n%20de%20automatizaci%C3%B3n%20para%20mi%20negocio.">
               WhatsApp
             </a>
           </div>
 
-          <p class="hero-note">No complicated technology pitch. We start with the business problem.</p>
+          <p class="hero-note"
+             data-en="No complicated technology pitch. We start with the business problem."
+             data-es="Sin complicar las cosas con tecnología. Empezamos por el problema del negocio.">
+            No complicated technology pitch. We start with the business problem.
+          </p>
         </div>
 
         <aside class="hero-card" aria-label="Common automation opportunities">
           <div class="hero-card-head">
             <span class="pulse"></span>
-            <span>Good candidates for automation</span>
+            <span data-en="Good candidates for automation"
+                  data-es="Buenos candidatos para automatizar">Good candidates for automation</span>
           </div>
+
           <ul class="check-list">
-            <li>Recurring Excel reports</li>
-            <li>Manual data entry</li>
-            <li>Email and document processing</li>
-            <li>Approvals and notifications</li>
-            <li>Copying data between systems</li>
-            <li>Repetitive administrative tasks</li>
+            <li data-en="Recurring Excel reports" data-es="Reportes recurrentes en Excel">Recurring Excel reports</li>
+            <li data-en="Manual data entry" data-es="Entrada manual de datos">Manual data entry</li>
+            <li data-en="Email and document processing" data-es="Procesamiento de correos y documentos">Email and document processing</li>
+            <li data-en="Approvals and notifications" data-es="Aprobaciones y notificaciones">Approvals and notifications</li>
+            <li data-en="Copying data between systems" data-es="Transferencia de datos entre sistemas">Copying data between systems</li>
+            <li data-en="Repetitive administrative tasks" data-es="Tareas administrativas repetitivas">Repetitive administrative tasks</li>
           </ul>
+
           <div class="mini-result">
-            <strong>Start simple.</strong>
-            <span>One repetitive task can become your first automation win.</span>
+            <strong data-en="Start simple." data-es="Empieza simple.">Start simple.</strong>
+            <span data-en="One repetitive task can become your first automation win."
+                  data-es="Una sola tarea repetitiva puede convertirse en tu primera gran mejora con automatización.">
+              One repetitive task can become your first automation win.
+            </span>
           </div>
         </aside>
       </div>
@@ -93,41 +140,62 @@
         <span>Excel / VBA</span>
         <span>APIs</span>
         <span>Automation Anywhere</span>
-        <span>AI-assisted workflows</span>
+        <span data-en="AI-assisted workflows" data-es="Flujos asistidos por IA">AI-assisted workflows</span>
       </div>
     </section>
 
     <section class="section" id="services">
       <div class="container">
         <div class="section-heading">
-          <div class="eyebrow">Services</div>
-          <h2>Automation that solves real business problems</h2>
-          <p>I choose the simplest practical technology for the process instead of forcing every problem into the same tool.</p>
+          <div class="eyebrow" data-en="Services" data-es="Servicios">Services</div>
+          <h2 data-en="Automation that solves real business problems"
+              data-es="Automatización que resuelve problemas reales del negocio">
+            Automation that solves real business problems
+          </h2>
+          <p data-en="I choose the simplest practical technology for the process instead of forcing every problem into the same tool."
+             data-es="Selecciono la tecnología práctica más adecuada para cada proceso, en lugar de intentar resolver todos los problemas con la misma herramienta.">
+            I choose the simplest practical technology for the process instead of forcing every problem into the same tool.
+          </p>
         </div>
 
         <div class="card-grid four">
           <article class="service-card">
             <div class="icon">01</div>
-            <h3>Business Process Automation</h3>
-            <p>Reduce repetitive administrative work, manual data entry, approvals, follow-ups, and recurring operational tasks.</p>
+            <h3 data-en="Business Process Automation"
+                data-es="Automatización de Procesos de Negocio">Business Process Automation</h3>
+            <p data-en="Reduce repetitive administrative work, manual data entry, approvals, follow-ups, and recurring operational tasks."
+               data-es="Reduce trabajo administrativo repetitivo, entrada manual de datos, aprobaciones, seguimientos y tareas operacionales recurrentes.">
+              Reduce repetitive administrative work, manual data entry, approvals, follow-ups, and recurring operational tasks.
+            </p>
           </article>
 
           <article class="service-card">
             <div class="icon">02</div>
-            <h3>Excel & Reporting Automation</h3>
-            <p>Automate spreadsheet consolidation, calculations, formatting, recurring reports, imports, exports, and legacy VBA workflows.</p>
+            <h3 data-en="Excel & Reporting Automation"
+                data-es="Automatización de Excel y Reportes">Excel & Reporting Automation</h3>
+            <p data-en="Automate spreadsheet consolidation, calculations, formatting, recurring reports, imports, exports, and legacy VBA workflows."
+               data-es="Automatiza consolidación de hojas de cálculo, cálculos, formatos, reportes recurrentes, importaciones, exportaciones y procesos existentes en VBA.">
+              Automate spreadsheet consolidation, calculations, formatting, recurring reports, imports, exports, and legacy VBA workflows.
+            </p>
           </article>
 
           <article class="service-card">
             <div class="icon">03</div>
             <h3>Microsoft Power Platform</h3>
-            <p>Build Power Automate workflows and Power Apps that connect everyday Microsoft 365 processes and help teams work more efficiently.</p>
+            <p data-en="Build Power Automate workflows and Power Apps that connect everyday Microsoft 365 processes and help teams work more efficiently."
+               data-es="Desarrolla flujos con Power Automate y soluciones en Power Apps que conectan procesos cotidianos de Microsoft 365 y ayudan a los equipos a trabajar con mayor eficiencia.">
+              Build Power Automate workflows and Power Apps that connect everyday Microsoft 365 processes and help teams work more efficiently.
+            </p>
           </article>
 
           <article class="service-card">
             <div class="icon">04</div>
-            <h3>Custom Integrations & RPA</h3>
-            <p>Use Python, APIs, Automation Anywhere, and custom logic to connect systems, process files, and automate more complex workflows.</p>
+            <h3 data-en="Custom Integrations & RPA"
+                data-es="Integraciones Personalizadas y RPA">Custom Integrations & RPA</h3>
+            <p data-en="Use Python, APIs, Automation Anywhere, and custom logic to connect systems, process files, and automate more complex workflows."
+               data-es="Utiliza Python, APIs, Automation Anywhere y lógica personalizada para conectar sistemas, procesar archivos y automatizar flujos de trabajo más complejos.">
+              Use Python, APIs, Automation Anywhere, and custom logic to connect systems, process files, and automate more complex workflows.
+            </p>
           </article>
         </div>
       </div>
@@ -136,37 +204,64 @@
     <section class="section section-alt" id="examples">
       <div class="container">
         <div class="section-heading">
-          <div class="eyebrow">Examples</div>
-          <h2>What could automation look like in your business?</h2>
-          <p>These are the types of repetitive processes that are often worth evaluating.</p>
+          <div class="eyebrow" data-en="Examples" data-es="Ejemplos">Examples</div>
+          <h2 data-en="What could automation look like in your business?"
+              data-es="¿Cómo podría verse la automatización en tu negocio?">
+            What could automation look like in your business?
+          </h2>
+          <p data-en="These are the types of repetitive processes that are often worth evaluating."
+             data-es="Estos son algunos tipos de procesos repetitivos que normalmente vale la pena evaluar.">
+            These are the types of repetitive processes that are often worth evaluating.
+          </p>
         </div>
 
         <div class="example-grid">
           <article class="before-after">
-            <div class="label before">Before</div>
-            <h3>Weekly reports take hours to prepare</h3>
-            <p>An employee downloads several files, combines data in Excel, formats the report, and emails it manually.</p>
+            <div class="label before" data-en="Before" data-es="Antes">Before</div>
+            <h3 data-en="Weekly reports take hours to prepare"
+                data-es="Los reportes semanales toman horas en prepararse">Weekly reports take hours to prepare</h3>
+            <p data-en="An employee downloads several files, combines data in Excel, formats the report, and emails it manually."
+               data-es="Un empleado descarga varios archivos, combina los datos en Excel, prepara el formato del reporte y lo envía manualmente por correo.">
+              An employee downloads several files, combines data in Excel, formats the report, and emails it manually.
+            </p>
             <div class="arrow">↓</div>
-            <div class="label after">After</div>
-            <p>The data is collected, processed, validated, formatted, and prepared automatically for delivery.</p>
+            <div class="label after" data-en="After" data-es="Después">After</div>
+            <p data-en="The data is collected, processed, validated, formatted, and prepared automatically for delivery."
+               data-es="Los datos se recopilan, procesan, validan, formatean y preparan automáticamente para su entrega.">
+              The data is collected, processed, validated, formatted, and prepared automatically for delivery.
+            </p>
           </article>
 
           <article class="before-after">
-            <div class="label before">Before</div>
-            <h3>Email information is re-entered manually</h3>
-            <p>Staff reads incoming messages and copies details into a spreadsheet or another business system.</p>
+            <div class="label before" data-en="Before" data-es="Antes">Before</div>
+            <h3 data-en="Email information is re-entered manually"
+                data-es="La información de correos se vuelve a entrar manualmente">Email information is re-entered manually</h3>
+            <p data-en="Staff reads incoming messages and copies details into a spreadsheet or another business system."
+               data-es="El personal lee los mensajes recibidos y copia la información a una hoja de cálculo u otro sistema del negocio.">
+              Staff reads incoming messages and copies details into a spreadsheet or another business system.
+            </p>
             <div class="arrow">↓</div>
-            <div class="label after">After</div>
-            <p>The workflow captures the information, validates it, and routes it to the appropriate destination.</p>
+            <div class="label after" data-en="After" data-es="Después">After</div>
+            <p data-en="The workflow captures the information, validates it, and routes it to the appropriate destination."
+               data-es="El flujo captura la información, la valida y la dirige automáticamente al destino correspondiente.">
+              The workflow captures the information, validates it, and routes it to the appropriate destination.
+            </p>
           </article>
 
           <article class="before-after">
-            <div class="label before">Before</div>
-            <h3>Approvals depend on manual follow-up</h3>
-            <p>Requests sit in inboxes while employees send reminders and manually track status.</p>
+            <div class="label before" data-en="Before" data-es="Antes">Before</div>
+            <h3 data-en="Approvals depend on manual follow-up"
+                data-es="Las aprobaciones dependen de seguimiento manual">Approvals depend on manual follow-up</h3>
+            <p data-en="Requests sit in inboxes while employees send reminders and manually track status."
+               data-es="Las solicitudes permanecen en bandejas de entrada mientras los empleados envían recordatorios y dan seguimiento al estatus manualmente.">
+              Requests sit in inboxes while employees send reminders and manually track status.
+            </p>
             <div class="arrow">↓</div>
-            <div class="label after">After</div>
-            <p>Requests are routed automatically, status is tracked, and reminders or notifications are triggered when needed.</p>
+            <div class="label after" data-en="After" data-es="Después">After</div>
+            <p data-en="Requests are routed automatically, status is tracked, and reminders or notifications are triggered when needed."
+               data-es="Las solicitudes se dirigen automáticamente, el estatus se monitorea y los recordatorios o notificaciones se activan cuando es necesario.">
+              Requests are routed automatically, status is tracked, and reminders or notifications are triggered when needed.
+            </p>
           </article>
         </div>
       </div>
@@ -175,91 +270,129 @@
     <section class="section" id="process">
       <div class="container">
         <div class="section-heading">
-          <div class="eyebrow">How it works</div>
-          <h2>A straightforward path from repetitive task to working automation</h2>
+          <div class="eyebrow" data-en="How it works" data-es="Cómo funciona">How it works</div>
+          <h2 data-en="A straightforward path from repetitive task to working automation"
+              data-es="Un proceso claro para convertir una tarea repetitiva en una automatización funcional">
+            A straightforward path from repetitive task to working automation
+          </h2>
         </div>
 
         <div class="steps">
           <article class="step">
             <span>1</span>
             <div>
-              <h3>Free assessment</h3>
-              <p>You show me the current process, the pain points, and what your team is doing manually today.</p>
+              <h3 data-en="Free assessment" data-es="Evaluación inicial gratis">Free assessment</h3>
+              <p data-en="You show me the current process, the pain points, and what your team is doing manually today."
+                 data-es="Me enseñas el proceso actual, los principales retos y lo que tu equipo hace manualmente hoy.">
+                You show me the current process, the pain points, and what your team is doing manually today.
+              </p>
             </div>
           </article>
+
           <article class="step">
             <span>2</span>
             <div>
-              <h3>Automation plan</h3>
-              <p>I identify what can be automated, recommend an approach, and define the expected scope and outcome.</p>
+              <h3 data-en="Automation plan" data-es="Plan de automatización">Automation plan</h3>
+              <p data-en="I identify what can be automated, recommend an approach, and define the expected scope and outcome."
+                 data-es="Identifico qué se puede automatizar, recomiendo un enfoque y definimos el alcance y resultado esperado.">
+                I identify what can be automated, recommend an approach, and define the expected scope and outcome.
+              </p>
             </div>
           </article>
+
           <article class="step">
             <span>3</span>
             <div>
-              <h3>Build & test</h3>
-              <p>The solution is developed and tested against the real workflow, including validation and exception handling.</p>
+              <h3 data-en="Build & test" data-es="Desarrollo y pruebas">Build & test</h3>
+              <p data-en="The solution is developed and tested against the real workflow, including validation and exception handling."
+                 data-es="La solución se desarrolla y prueba utilizando el flujo de trabajo real, incluyendo validaciones y manejo de excepciones.">
+                The solution is developed and tested against the real workflow, including validation and exception handling.
+              </p>
             </div>
           </article>
+
           <article class="step">
             <span>4</span>
             <div>
-              <h3>Deploy & document</h3>
-              <p>You receive the working automation plus practical documentation and guidance for your team.</p>
+              <h3 data-en="Deploy & document" data-es="Implementación y documentación">Deploy & document</h3>
+              <p data-en="You receive the working automation plus practical documentation and guidance for your team."
+                 data-es="Recibes la automatización funcionando, junto con documentación práctica y orientación para tu equipo.">
+                You receive the working automation plus practical documentation and guidance for your team.
+              </p>
             </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section proof">
-      <div class="container proof-grid">
-        <div>
-          <div class="eyebrow">Real-world experience</div>
-          <h2>More than scripts: process analysis, controls, testing, and implementation.</h2>
-          <p>
-            My background combines software development and business analysis, so I approach automation from both sides:
-            understanding how the process works and building a maintainable solution that fits the business.
+    <section class="section proof" id="about">
+      <div class="container experience-grid">
+        <div class="experience-copy">
+          <div class="eyebrow"
+               data-en="Experience & approach"
+               data-es="Experiencia y enfoque">Experience & approach</div>
+
+          <h2 data-en="More than scripts: practical automation with a business-first mindset."
+              data-es="Más que scripts: automatización práctica con un enfoque primero en el negocio.">
+            More than scripts: practical automation with a business-first mindset.
+          </h2>
+
+          <p data-en="Rodríguez Automation Solutions combines hands-on automation engineering with business analysis, process improvement, analytics, testing, controls, and implementation experience. The goal is not simply to write code—it is to understand how the work gets done and build automation that actually improves the way the business operates."
+             data-es="Rodríguez Automation Solutions combina experiencia práctica en ingeniería de automatización con análisis de negocio, mejora de procesos, analítica, pruebas, controles e implementación. El objetivo no es simplemente escribir código: es entender cómo se realiza el trabajo y desarrollar automatizaciones que realmente mejoren la forma en que opera el negocio.">
+            Rodríguez Automation Solutions combines hands-on automation engineering with business analysis,
+            process improvement, analytics, testing, controls, and implementation experience. The goal is not
+            simply to write code—it is to understand how the work gets done and build automation that actually
+            improves the way the business operates.
+          </p>
+
+          <p data-en="With 7 years of professional experience across technology, operations, analytics, and automation, I bring both the technical and business perspective needed to identify opportunities, translate requirements into workable solutions, and help teams reduce repetitive work, improve consistency, and make better use of their time and data."
+             data-es="Con 7 años de experiencia profesional en tecnología, operaciones, analítica y automatización, aporto tanto la perspectiva técnica como la de negocio necesaria para identificar oportunidades, convertir necesidades en soluciones viables y ayudar a los equipos a reducir trabajo repetitivo, mejorar la consistencia y aprovechar mejor su tiempo y sus datos.">
+            With 7 years of professional experience across technology, operations, analytics, and automation,
+            I bring both the technical and business perspective needed to identify opportunities, translate
+            requirements into workable solutions, and help teams reduce repetitive work, improve consistency,
+            and make better use of their time and data.
           </p>
         </div>
 
-        <div class="metrics">
-          <div class="metric">
-            <strong>3 FTE</strong>
-            <span>Equivalent manual workload eliminated through automation in professional work</span>
-          </div>
-          <div class="metric">
-            <strong>10</strong>
-            <span>Power Apps solutions built to standardize and automate workflows</span>
-          </div>
-          <div class="metric">
-            <strong>20%</strong>
-            <span>Operational efficiency improvement associated with those Power Apps solutions</span>
-          </div>
-        </div>
-      </div>
-    </section>
+        <div class="experience-panel">
+          <h3 data-en="Credentials & capabilities"
+              data-es="Credenciales y capacidades">Credentials & capabilities</h3>
 
-    <section class="section section-alt" id="about">
-      <div class="container about-grid">
-        <div>
-          <div class="eyebrow">About</div>
-          <h2>Practical automation with a business-first mindset.</h2>
-        </div>
-        <div class="about-copy">
-          <p>
-            Rodríguez Automation Solutions helps small businesses reduce repetitive work and improve everyday operations
-            through practical, maintainable automation.
-          </p>
-          <p>
-            The focus is not on selling a particular technology. It is on understanding the process, finding the right
-            level of automation, and building a solution that makes sense for the people who will actually use it.
-          </p>
-          <div class="credentials">
-            <span>B.S. Computer Science</span>
-            <span>MBA in Finance</span>
-            <span>Business Analysis</span>
-            <span>Automation Engineering</span>
+          <div class="credential-list">
+            <div class="credential-item">
+              <strong data-en="7 years" data-es="7 años">7 years</strong>
+              <span data-en="Professional experience across technology, operations, business systems, analytics, and automation."
+                    data-es="Experiencia profesional en tecnología, operaciones, sistemas de negocio, analítica y automatización.">
+                Professional experience across technology, operations, business systems, analytics, and automation.
+              </span>
+            </div>
+
+            <div class="credential-item">
+              <strong data-en="B.S. in Computer Science"
+                      data-es="B.S. en Ciencias de Computadoras">B.S. in Computer Science</strong>
+              <span data-en="Technical foundation in software development, systems, data, and problem solving."
+                    data-es="Base técnica en desarrollo de software, sistemas, datos y resolución de problemas.">
+                Technical foundation in software development, systems, data, and problem solving.
+              </span>
+            </div>
+
+            <div class="credential-item">
+              <strong data-en="MBA in Finance"
+                      data-es="MBA en Finanzas">MBA in Finance</strong>
+              <span data-en="Business and financial perspective for evaluating process impact, efficiency, and value."
+                    data-es="Perspectiva empresarial y financiera para evaluar el impacto, la eficiencia y el valor de los procesos.">
+                Business and financial perspective for evaluating process impact, efficiency, and value.
+              </span>
+            </div>
+
+            <div class="credential-item">
+              <strong data-en="Automation + Analytics"
+                      data-es="Automatización + Analítica">Automation + Analytics</strong>
+              <span data-en="Python, SQL, VBA, Power Platform, Automation Anywhere, APIs, reporting, data validation, and workflow design."
+                    data-es="Python, SQL, VBA, Power Platform, Automation Anywhere, APIs, reportes, validación de datos y diseño de flujos de trabajo.">
+                Python, SQL, VBA, Power Platform, Automation Anywhere, APIs, reporting, data validation, and workflow design.
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -268,17 +401,43 @@
     <section class="cta-section" id="contact">
       <div class="container cta-card">
         <div>
-          <div class="eyebrow light">Free automation assessment</div>
-          <h2>What repetitive task is costing your business time?</h2>
-          <p>Tell me what your team does manually today. We can evaluate whether automation makes sense.</p>
+          <div class="eyebrow light"
+               data-en="Free automation assessment"
+               data-es="Evaluación de automatización gratis">Free automation assessment</div>
+
+          <h2 data-en="What repetitive task is costing your business time?"
+              data-es="¿Qué tarea repetitiva le está costando tiempo a tu negocio?">
+            What repetitive task is costing your business time?
+          </h2>
+
+          <p data-en="Tell me what your team does manually today. We can evaluate whether automation makes sense."
+             data-es="Cuéntame qué hace tu equipo manualmente hoy. Podemos evaluar si la automatización tiene sentido para tu negocio.">
+            Tell me what your team does manually today. We can evaluate whether automation makes sense.
+          </p>
         </div>
 
         <div class="contact-actions">
-          <a class="button button-light" href="mailto:LuisJRodriguezE@gmail.com?subject=Free%20Automation%20Assessment&body=Hi%20Luis%2C%0A%0AI%27d%20like%20to%20discuss%20a%20process%20we%20may%20be%20able%20to%20automate.%0A%0ACompany%3A%0AProcess%20or%20task%3A%0AApproximate%20time%20spent%20today%3A%0A%0AThanks%21">
+          <a class="button button-light bilingual-contact"
+             href="mailto:LuisJRodriguezE@gmail.com?subject=Free%20Automation%20Assessment&body=Hi%20Luis%2C%0A%0AI%27d%20like%20to%20discuss%20a%20process%20we%20may%20be%20able%20to%20automate.%0A%0ACompany%3A%0AProcess%20or%20task%3A%0AApproximate%20time%20spent%20today%3A%0A%0AThanks%21"
+             data-en="Email Luis"
+             data-es="Escríbele a Luis"
+             data-en-href="mailto:LuisJRodriguezE@gmail.com?subject=Free%20Automation%20Assessment&body=Hi%20Luis%2C%0A%0AI%27d%20like%20to%20discuss%20a%20process%20we%20may%20be%20able%20to%20automate.%0A%0ACompany%3A%0AProcess%20or%20task%3A%0AApproximate%20time%20spent%20today%3A%0A%0AThanks%21"
+             data-es-href="mailto:LuisJRodriguezE@gmail.com?subject=Evaluaci%C3%B3n%20de%20Automatizaci%C3%B3n&body=Hola%20Luis%2C%0A%0AMe%20gustar%C3%ADa%20conversar%20sobre%20un%20proceso%20de%20mi%20negocio%20que%20podr%C3%ADamos%20automatizar.%0A%0AEmpresa%3A%0AProceso%20o%20tarea%3A%0ATiempo%20aproximado%20que%20toma%20actualmente%3A%0A%0AGracias%21">
             Email Luis
           </a>
-          <a class="button button-outline-light" href="tel:+17873714068">Call (787) 371-4068</a>
-          <a class="button button-outline-light" href="https://wa.me/17873714068?text=Hi%20Luis%2C%20I%27m%20interested%20in%20an%20automation%20assessment%20for%20my%20business.">WhatsApp</a>
+
+          <a class="button button-outline-light" href="tel:+17873714068"
+             data-en="Call (787) 371-4068"
+             data-es="Llamar al (787) 371-4068">Call (787) 371-4068</a>
+
+          <a class="button button-outline-light bilingual-contact"
+             href="https://wa.me/17873714068?text=Hi%20Luis%2C%20I%27m%20interested%20in%20an%20automation%20assessment%20for%20my%20business."
+             data-en="WhatsApp"
+             data-es="WhatsApp"
+             data-en-href="https://wa.me/17873714068?text=Hi%20Luis%2C%20I%27m%20interested%20in%20an%20automation%20assessment%20for%20my%20business."
+             data-es-href="https://wa.me/17873714068?text=Hola%20Luis%2C%20me%20interesa%20una%20evaluaci%C3%B3n%20de%20automatizaci%C3%B3n%20para%20mi%20negocio.">
+            WhatsApp
+          </a>
         </div>
       </div>
     </section>
@@ -294,19 +453,28 @@
             <small>Automation Solutions</small>
           </span>
         </a>
-        <p>Automate repetitive work. Save time. Reduce errors.</p>
+        <p data-en="Automate repetitive work. Save time. Reduce errors."
+           data-es="Automatiza el trabajo repetitivo. Ahorra tiempo. Reduce errores.">
+          Automate repetitive work. Save time. Reduce errors.
+        </p>
       </div>
 
       <div class="footer-contact">
-        <a href="mailto:LuisJRodriguezE@gmail.com">LuisJRodriguezEspinal@gmail.com</a>
+        <a href="mailto:LuisJRodriguezE@gmail.com">LuisJRodriguezE@gmail.com</a>
         <a href="tel:+17873714068">(787) 371-4068</a>
-        <span>Puerto Rico · Remote services available</span>
+        <span data-en="Puerto Rico · Remote services available"
+              data-es="Puerto Rico · Servicios remotos disponibles">
+          Puerto Rico · Remote services available
+        </span>
       </div>
     </div>
 
     <div class="container copyright">
       <span>© <span id="year"></span> Rodríguez Automation Solutions.</span>
-      <span>Business process automation & consulting.</span>
+      <span data-en="Business process automation & consulting."
+            data-es="Automatización de procesos y consultoría.">
+        Business process automation & consulting.
+      </span>
     </div>
   </footer>
 
